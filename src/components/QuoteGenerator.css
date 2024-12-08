@@ -1,0 +1,84 @@
+.card{
+    max-width: 800px;
+    width: 800px;
+    margin: 60px auto;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid F8FAFC;
+    border-radius: 5px;
+    background: #D9EAFD;
+    box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+    color: #9AA6B2;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #333;
+    font-style: italic;
+    padding: 1rem;
+}
+.advice{
+    font-size: 2rem;
+    padding: 2rem;
+}
+.advice::before{
+    content: "“ ";
+}
+.advice::after{
+    content: " ”";
+}
+.btn{
+    padding:1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: transparent;
+    color: #9AA6B2;
+    font-weight: 600;
+    font-size: 2rem;
+    transition: 1s;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #BCCCDC;
+    color: #333;
+}
+
+@media only screen and (max-width:900px){
+    .card{
+        width: 600px;
+    }
+    .title{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width:690px){
+    .card{
+        width: 400px;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .advice{
+        font-size: 1rem;
+    }
+    .btn{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width:500px){
+    .card{
+        width: 200px;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .advice{
+        font-size: 1rem;
+    }
+    .btn{
+        font-size: 1rem;
+    }
+}
+
